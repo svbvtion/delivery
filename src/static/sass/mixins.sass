@@ -1,0 +1,105 @@
+// flex
+
+=flex ($jcontent:start, $aitems:stretch, $wrap:nowrap)
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: $jcontent
+	align-items: $aitems
+	flex-wrap: $wrap
+
+// vertical center
+=center
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+=centerX
+	left: 50%
+	transform: translate(-50%, 0)
+=centerY
+	top: 50%
+	transform: translate(0, -50%)
+
+
+=bg-box($h:100%, $w:100%, $t:0, $l:0)
+	position: absolute
+	top: $t
+	left: $l
+	width: $w
+	height: $h
+=bg-pic($position:center)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	object-position: $position
+
+=fillable($height:100vh)
+	min-height: $height
+	min-height: -webkit-fill-available
+	min-height: fill-available
+
+
+=smooth($delay:.3, $type:ease)
+	transition: all $delay+s $type
+
+// clip-path
+
+=clp ($params)
+	-webkit-clip-path: $params
+	clip-path: $params
+
+
+// absolute
+
+=absolute($t:auto, $r:auto, $b:auto, $l:auto)
+	position: absolute
+	top: $t
+	right: $r
+	bottom: $b
+	left: $b
+
+// fix breakpoints
+
+=desktops
+	@media (min-width: 1200px)
+		@content
+=medium-desktops
+	@media (min-width: 992px) and (max-width: 1199px)
+		@content
+=small-desktops
+	@media (min-width: 768px) and (max-width: 991px)
+		@content
+
+=phone
+	@media (max-width: 767px)
+		@content
+=portrait-phones
+	@media (max-width: 480px)
+		@content
+=small-phones
+	@media (max-width: 320px)
+		@content
+
+//peculiar breakpoints
+
+=r($width)
+	@media (max-width:$width+'px')
+		@content
+=portrait()
+	@media (orientation: portrait)
+		@content
+
+=ratio($val)
+	@media (max-aspect-ratio: $val)
+		@content
+//px to em
+
+$browser-context: 16
+
+@function em( $pixels, $context: $browser-context)
+	@return #{$pixels/$context}em
