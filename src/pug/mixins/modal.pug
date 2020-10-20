@@ -1,0 +1,69 @@
+mixin modal(modalID)
+	.modal(id=modalID, data-modal)
+		.modal__overlay(data-close='true')
+			.modal__window
+				.modal__header
+					span.modal__title Корзина
+					span.modal__close(data-close="true") &times
+				.modal__products
+					ul.products__list
+						li.products__item
+							span.products__name Ролл угорь стандарт
+							.products__group
+								.products__price
+									span.products__price_value 250 
+									span.products__price_valute ₽
+								.products__count
+									button.products__count_button.products__count_reduce -
+									span.products__count_value 1
+									button.products__count_button.products__count_enlarge +
+						li.products__item
+							span.products__name Ролл угорь стандарт
+							.products__group
+								.products__price
+									span.products__price_value 250 
+									span.products__price_valute ₽
+								.products__count
+									button.products__count_button.products__count_reduce -
+									span.products__count_value 1
+									button.products__count_button.products__count_enlarge +
+						li.products__item
+							span.products__name Ролл угорь стандарт
+							.products__group
+								.products__price
+									span.products__price_value 250 
+									span.products__price_valute ₽
+								.products__count
+									button.products__count_button.products__count_reduce -
+									span.products__count_value 1
+									button.products__count_button.products__count_enlarge +
+						li.products__item
+							span.products__name Ролл угорь стандарт Ролл угорь стандарт Ролл угорь стандарт
+							.products__group
+								.products__price
+									span.products__price_value 250 
+									span.products__price_valute ₽
+								.products__count
+									button.products__count_button.products__count_reduce -
+									span.products__count_value 1
+									button.products__count_button.products__count_enlarge +
+						li.products__item
+							span.products__name Ролл угорь стандарт
+							.products__group
+								.products__price
+									span.products__price_value 250 
+									span.products__price_valute ₽
+								.products__count
+									button.products__count_button.products__count_reduce -
+									span.products__count_value 1
+									button.products__count_button.products__count_enlarge +
+				.modal__footer
+					.modal__result.modal__footer_item
+						.result
+							span.result__value 1250 
+							span.result__valute ₽
+					.modal__buttons.modal__footer_item
+						button.button.button_primary.modal__button(href="#")
+							.button__content Оформить заказ
+						button.button.modal__button
+							.button__content(data-close='true') Отмена

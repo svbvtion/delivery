@@ -1,0 +1,126 @@
+.section
+	
+	&__heading
+		+flex(space-between, center)
+		margin-bottom: 45px
+		flex-wrap: wrap
+		margin-top: -20px
+	&__item
+		margin-top: 20px
+	&__title
+		font-size: 36px
+		line-height: 1.2
+	&__search
+		width: 305px
+		+r(630)
+			flex: 1 1 100%
+
+.cards
+	+flex(space-between)
+	flex-wrap: wrap
+	margin-left: -25px
+	margin-top: -30px
+	padding-bottom: 90px
+
+
+.card
+	background-color: #fff
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, .05)
+	border-radius: 7px
+	overflow: hidden
+	flex: 1 1 285px
+	margin-left: 25px
+	margin-top: 30px
+	display: flex
+	flex-direction: column
+	&__bg
+		height: 250px
+		width: 100%
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	
+	&__heading
+		+flex(space-between, center)
+		margin-bottom: 10px
+
+
+
+	&__text
+		padding: 20px 23px 35px
+
+	&__title
+		font-size: 24px
+		font-weight: bold
+		line-height: 1.5
+	&__tag
+		color: #fff
+		white-space: nowrap
+		margin-left: 20px
+		background-color: #000
+		border-radius: 2px
+		padding: 7px 8px
+		font-size: 12px
+	&__info
+		+flex(start, center)
+		flex-wrap: wrap
+		margin-top: -10px
+		&_item
+			display: inline-block
+			margin-top: 10px
+	&__rating
+		margin-right: 25px
+		color: #ffc107
+		font-weight: 700
+
+	&__price, &__category
+		color: #8c8c8c
+	&__price
+		margin-right: 10px
+		&:after
+			content: ''
+			width: 5px
+			height: 5px
+			background-color: #8c8c8c
+			display: inline-block
+			margin-left: 10px
+			border-radius: 50%
+			+centerY
+	&__buy
+		+flex
+		align-items: flex-end
+		flex-wrap: wrap
+		margin-left: -20px
+		//flex: 1 1 auto
+		align-items: center
+		&_item
+			margin-left: 20px
+	&__pricing
+		white-space: nowrap
+		font-size: 20px
+		line-height: 1.6667
+		font-weight: 700
+	&__button
+		display: block
+
+
+	&__text
+		flex: 1
+		display: flex
+		flex-direction: column
+		//justify-content: space-between
+	&__heading
+		flex: 1
+		align-items: start
+
+
+		
+.rating
+	&__icon
+		line-height: 0
+		margin-right: 7px
+		font-size: 14px
+	&__text
+		line-height: 0
+

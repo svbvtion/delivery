@@ -1,0 +1,124 @@
+.modal
+	position: fixed
+	z-index: 10000
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: rgba(0, 0, 0, .3)
+	overflow: auto
+	display: none
+	&__overlay
+		min-height: 100%
+		padding: 20px
+		+flex(center, center)
+
+	&__window
+		background-color: #fff
+		padding: 40px 45px
+		border-radius: 5px
+		width: 700px
+		+r(400)
+			padding: 40px 25px
+	&__header
+		+flex(space-between, center)
+		margin-bottom: 45px
+	&__title
+		font-size: 36px
+		font-weight: 700
+		+r(400)
+			font-size: 25px
+	&__close
+		font-size: 50px
+		line-height: 0
+		font-weight: bold
+		cursor: pointer
+		+r(400)
+			font-size: 40px
+	&__footer
+		+flex(space-between, center)
+		margin-top: -30px
+		+r(550)
+			flex-direction: column
+			align-items: flex-end
+		&_item
+			margin-top: 30px
+	&__button
+		line-height: 1.5
+		+r(400)
+			margin-right: 0
+			width: 100%
+			margin-bottom: 20px
+	&__buttons
+
+		+r(400)
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+	&.active
+		display: block
+.button
+	+r(400)
+		+flex(center, center)
+.products
+
+	&__list
+		list-style: none
+		margin-bottom: 45px
+	&__item
+		+flex(space-between, center)
+		padding-bottom: 10px
+		margin-bottom: 15px
+		border-bottom: 1px solid #d9d9d9
+	&__name
+		font-size: 18px
+		line-height: 1.7778
+		width: 50%
+		margin-right: 20px
+
+		+r(400)
+			font-size: 14px
+	&__group
+		+flex(start, center)
+	&__price
+		font-size: 20px
+		font-weight: 700
+		line-height: 1.6
+		margin-right: 50px
+		white-space: nowrap
+		+r(400)
+			font-size: 16px
+	&__count
+		+r(700)
+			display: flex
+			flex-direction: column
+			align-items: center
+		&_button
+			background-color: #fff
+			height: 40px
+			width: 40px 
+			border: 1px solid #009cff
+			border-radius: 2px
+			font-size: 20px
+			color: #009cff
+		&_value
+			font-size: 16px
+			margin: 10px 0
+			width: 50px
+			text-align: center
+			display: inline-block
+			+r(400)
+				width: 30px
+
+.result
+	padding: 15px 20px
+	color: #fff
+	font-size: 20px
+	background-color: #262626
+	border-radius: 5px
+	display: inline-block
+
+body.lock
+	overflow: hidden
+	

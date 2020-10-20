@@ -1,0 +1,36 @@
+.footer
+	background-color: #fff
+	padding: 60px 0
+	&__body
+		+flex(space-between, center)
+		margin-top: -30px
+		+r(850)
+			flex-direction: column
+			justify-content: center
+		&_item
+			margin-top: 30px
+	&__nav
+		margin-right: auto
+		margin-left: 35px
+		+r(850)
+			margin-right: 0
+			margin-left: 0
+		+r(500)
+			margin-bottom: 20px
+
+	&__link
+		color: #595959
+		font-size: 18px
+		line-height: 1.2
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+		+r(500)
+			display: block
+			margin-top: 20px
+.social
+	&__link
+		margin-right: 21px
+		font-size: 18px
+		&:last-child
+			margin-right: 0

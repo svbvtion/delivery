@@ -9,3 +9,77 @@
 
 //svg
 @import 'sprite'
+
+
+
+
+body
+	font-family: $font-primary
+
+.wrapper
+	max-width: 1200px
+	margin: 0 auto
+
+	+r(1240)
+		padding: 0 20px
+
+.logo
+	&__icon
+		font-size: 45px
+
+.input
+	background-color: #fff
+	border: 1px solid #d9d9d9
+	border-radius: 2px
+	font-size: 16px
+	line-height: 1.5
+	padding: 8px
+	padding-left: 35px
+.search
+	position: relative
+
+	&__icon
+		position: absolute
+		z-index: 1
+		+centerY
+		left: 10px
+
+		&-pic
+			font-size: 20px
+			color: #8C8C8C
+
+
+	&__input
+		width: 100%
+.button
+	white-space: nowrap
+	padding: 8px 16px
+	background-color: #fff
+	border: 1px solid #d9d9d9
+	border-radius: 2px
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015)
+	font-size: 16px
+	color: #595959
+	display: inline-block
+	margin-right: 10px
+	&:last-child
+		margin-right: 0
+
+	&__content
+		+flex(start, center)
+	&__icon
+		font-size: 24px
+		margin-right: 6px
+	&_primary
+		background-color: #1890ff
+		border: 1px solid #1890ff
+		color: #fff
+.content
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%)
+
+
+@import 'sections/header'
+@import 'sections/hero'
+@import 'sections/restaurants'
+@import 'sections/footer'
+@import 'sections/modal'

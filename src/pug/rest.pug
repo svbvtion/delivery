@@ -1,0 +1,167 @@
+include mixins/mixin
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Delivery Food - доставка еды на дом
+		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.wrapper
+			header.header
+				.header__top
+					.header__logo.header__item
+						a.logo(href="#")
+							+svg('logo', 'logo__icon') 
+					.header__search.header__item
+						.search
+							.search__icon
+								+svg('home', 'search__icon-pic')
+							input.input.search__input(type="text" placeholder="Адрес доставки")
+					.header__buttons.header__item
+						.buttons
+							a.button.button_primary(href="#")
+								.button__content
+									+svg('user', 'button__icon')
+									span Войти
+							a.button(href="#")
+								.button__content
+									+svg('basket', 'button__icon')
+									span Корзина
+			
+		main.content
+			.wrapper
+				
+				section.restaurants
+					.section__heading
+						h2.section__title.section__item PizzaBurger
+						.section__info.section__item
+							.card__info
+								.card__rating.rating.card__info_item 
+									+svg('star', 'rating__icon')
+									span.rating__text 4.5
+								.card__price.card__info_item От 900 Р
+								.card__category.card__info_item Пицца
+					.cards
+						.card
+							.card__bg
+								+webp('card__img', 'food-1', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+								
+
+						.card
+							.card__bg
+								+webp('card__img', 'food-2', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+						.card
+							.card__bg
+								+webp('card__img', 'food-3', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+						.card
+							.card__bg
+								+webp('card__img', 'food-4', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+						.card
+							.card__bg
+								+webp('card__img', 'food-5', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс Пицца плюс Пицца плюс Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+						.card
+							.card__bg
+								+webp('card__img', 'food-6', 'png', 'food')
+							.card__text
+								.card__heading
+									h3.card__title Пицца плюс
+									span.card__tag.tag 50 мин
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+
+
+			footer.footer
+				.wrapper
+					.footer__body
+						.footer__logo.footer__body_item
+							a.logo(href="#")
+								+svg('logo', 'logo__icon')
+						nav.footer__nav.footer__body_item
+							a.footer__link(href="#") Ресторанам 
+							a.footer__link(href="#") Курьерам
+							a.footer__link(href="#") Прессцентр
+							a.footer__link(href="#") Контакт
+						.footer__social.footer__body_item
+							.social
+								a.social__link(href="#")
+									+svg('insta', 'social__icon')
+								a.social__link(href="#")
+									+svg('fb', 'social__icon')
+								a.social__link(href="#")
+									+svg('vk', 'social__icon')
+
+			
+
+			
