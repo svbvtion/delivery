@@ -76,10 +76,50 @@ body
 		color: #fff
 .content
 	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%)
-
+.card
+	&__tovar
+		display: block
+	&__sost
+		margin-bottom: 20px
+		line-height: 1.5
 
 @import 'sections/header'
 @import 'sections/hero'
 @import 'sections/restaurants'
 @import 'sections/footer'
 @import 'sections/modal'
+
+
+.card
+	&:hover
+		transform: scale(1.05)
+		transition: transform .3s ease
+	&__tovar
+		display: block
+	&-prod
+		&__title
+			font-weight: normal
+.social
+	&__icon
+		width: 30px
+		height: 30px
+		&:hover
+			transition: all .3s ease
+			fill: #fdd376
+.modal
+	&__body
+		text-align: center
+		margin-top: -15px
+		&_txt
+			font-size: 1.5rem
+			line-height: 1.3
+
+.hidden
+	opacity: 0
+	font-size: 0
+
+.footer
+	&__link
+		&:hover
+			transition: all .3s ease
+			color: red

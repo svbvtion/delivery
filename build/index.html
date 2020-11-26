@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,7 +13,7 @@
       <div class="wrapper">
         <header class="header">
           <div class="header__top">
-            <div class="header__logo header__item"><a class="logo" href="#">
+            <div class="header__logo header__item"><a class="logo" href="./">
                 <svg class="icon icon-logo logo__icon">
                   <use xlink:href="static/img/svg/sprite.svg#logo"></use>
                 </svg></a></div>
@@ -28,12 +28,12 @@
               </div>
             </div>
             <div class="header__buttons header__item">
-              <div class="buttons"><a class="button button_primary" href="#">
+              <div class="buttons"><a class="button button_primary header__button modal__link" href="#demostration">
                   <div class="button__content">
                     <svg class="icon icon-user button__icon">
                       <use xlink:href="static/img/svg/sprite.svg#user"></use>
                     </svg><span>Войти</span>
-                  </div></a><a class="button modal__link" href="#modal">
+                  </div></a><a class="button modal__link header__button" href="#modal">
                   <div class="button__content">
                     <svg class="icon icon-basket button__icon">
                       <use xlink:href="static/img/svg/sprite.svg#basket"></use>
@@ -66,7 +66,25 @@
                 <input class="input search__input" type="text" placeholder="Поиск блюд и ресторанов">
               </div>
             </div>
-            <div class="cards"><a class="card" href="#">
+            <div class="cards"><a class="card" href="./rest.html">
+                <div class="card__bg">
+                  <picture>
+                    <source srcset="static/img/food-2.webp" type="image/webp"/><img class="card__img" src="static/img/food-2.png" alt="food"/>
+                  </picture>
+                </div>
+                <div class="card__text">
+                  <div class="card__heading">
+                    <h3 class="card__title">Тануки</h3><span class="card__tag tag">50 мин</span>
+                  </div>
+                  <div class="card__info">
+                    <div class="card__rating rating card__info_item"> 
+                      <svg class="icon icon-star rating__icon">
+                        <use xlink:href="static/img/svg/sprite.svg#star"></use>
+                      </svg><span class="rating__text">4.5</span>
+                    </div>
+                    <div class="card__price card__info_item">От 900 Р</div>
+                  </div>
+                </div></a><a class="card modal__link" href="#demostration">
                 <div class="card__bg">
                   <picture>
                     <source srcset="static/img/food-1.webp" type="image/webp"/><img class="card__img" src="static/img/food-1.png" alt="food"/>
@@ -85,26 +103,7 @@
                     <div class="card__price">От 900 Р</div>
                     <div class="card__category">Пицца</div>
                   </div>
-                </div></a><a class="card" href="#">
-                <div class="card__bg">
-                  <picture>
-                    <source srcset="static/img/food-2.webp" type="image/webp"/><img class="card__img" src="static/img/food-2.png" alt="food"/>
-                  </picture>
-                </div>
-                <div class="card__text">
-                  <div class="card__heading">
-                    <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
-                  </div>
-                  <div class="card__info">
-                    <div class="card__rating rating card__info_item"> 
-                      <svg class="icon icon-star rating__icon">
-                        <use xlink:href="static/img/svg/sprite.svg#star"></use>
-                      </svg><span class="rating__text">4.5</span>
-                    </div>
-                    <div class="card__price card__info_item">От 900 Р</div>
-                    <div class="card__category card__info_item">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Officia, repellendus.</div>
-                  </div>
-                </div></a><a class="card" href="#">
+                </div></a><a class="card modal__link" href="#demostration">
                 <div class="card__bg">
                   <picture>
                     <source srcset="static/img/food-3.webp" type="image/webp"/><img class="card__img" src="static/img/food-3.png" alt="food"/>
@@ -112,7 +111,7 @@
                 </div>
                 <div class="card__text">
                   <div class="card__heading">
-                    <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                    <h3 class="card__title">FoodBand</h3><span class="card__tag tag">50 мин</span>
                   </div>
                   <div class="card__info">
                     <div class="card__rating rating"> 
@@ -123,7 +122,7 @@
                     <div class="card__price">От 900 Р</div>
                     <div class="card__category">Пицца</div>
                   </div>
-                </div></a><a class="card" href="#">
+                </div></a><a class="card modal__link" href="#demostration">
                 <div class="card__bg">
                   <picture>
                     <source srcset="static/img/food-4.webp" type="image/webp"/><img class="card__img" src="static/img/food-4.png" alt="food"/>
@@ -131,7 +130,7 @@
                 </div>
                 <div class="card__text">
                   <div class="card__heading">
-                    <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                    <h3 class="card__title">PizzaBurger</h3><span class="card__tag tag">50 мин</span>
                   </div>
                   <div class="card__info">
                     <div class="card__rating rating"> 
@@ -142,7 +141,7 @@
                     <div class="card__price">От 900 Р</div>
                     <div class="card__category">Пицца</div>
                   </div>
-                </div></a><a class="card" href="#">
+                </div></a><a class="card modal__link" href="#demostration">
                 <div class="card__bg">
                   <picture>
                     <source srcset="static/img/food-5.webp" type="image/webp"/><img class="card__img" src="static/img/food-5.png" alt="food"/>
@@ -150,7 +149,7 @@
                 </div>
                 <div class="card__text">
                   <div class="card__heading">
-                    <h3 class="card__title">Пицца плюс Пицца плюс Пицца плюс Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                    <h3 class="card__title">Жадина-пицца</h3><span class="card__tag tag">50 мин</span>
                   </div>
                   <div class="card__info">
                     <div class="card__rating rating"> 
@@ -161,7 +160,7 @@
                     <div class="card__price">От 900 Р</div>
                     <div class="card__category">Пицца</div>
                   </div>
-                </div></a><a class="card" href="#">
+                </div></a><a class="card modal__link" href="#demostration">
                 <div class="card__bg">
                   <picture>
                     <source srcset="static/img/food-6.webp" type="image/webp"/><img class="card__img" src="static/img/food-6.png" alt="food"/>
@@ -169,7 +168,7 @@
                 </div>
                 <div class="card__text">
                   <div class="card__heading">
-                    <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                    <h3 class="card__title">Точка еды</h3><span class="card__tag tag">50 мин</span>
                   </div>
                   <div class="card__info">
                     <div class="card__rating rating"> 
@@ -186,21 +185,21 @@
         <footer class="footer">
           <div class="wrapper">
             <div class="footer__body">
-              <div class="footer__logo footer__body_item"><a class="logo" href="#">
+              <div class="footer__logo footer__body_item"><a class="logo" href="./">
                   <svg class="icon icon-logo logo__icon">
                     <use xlink:href="static/img/svg/sprite.svg#logo"></use>
                   </svg></a></div>
-              <nav class="footer__nav footer__body_item"><a class="footer__link" href="#">Ресторанам </a><a class="footer__link" href="#">Курьерам</a><a class="footer__link" href="#">Прессцентр</a><a class="footer__link" href="#">Контакт</a></nav>
+              <nav class="footer__nav footer__body_item"><a class="footer__link modal__link" href="#demostration">Ресторанам </a><a class="footer__link modal__link" href="#demostration">Курьерам</a><a class="footer__link modal__link" href="#demostration">Прессцентр</a><a class="footer__link modal__link" href="#demostration">Контакт</a></nav>
               <div class="footer__social footer__body_item">
-                <div class="social"><a class="social__link" href="#">
-                    <svg class="icon icon-insta social__icon">
-                      <use xlink:href="static/img/svg/sprite.svg#insta"></use>
-                    </svg></a><a class="social__link" href="#">
-                    <svg class="icon icon-fb social__icon">
-                      <use xlink:href="static/img/svg/sprite.svg#fb"></use>
-                    </svg></a><a class="social__link" href="#">
+                <div class="social"><a class="social__link modal__link" href="#demostration">
                     <svg class="icon icon-vk social__icon">
                       <use xlink:href="static/img/svg/sprite.svg#vk"></use>
+                    </svg></a><a class="social__link modal__link" href="#demostration">
+                    <svg class="icon icon-twitter social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#twitter"></use>
+                    </svg></a><a class="social__link modal__link" href="#demostration">
+                    <svg class="icon icon-instagram social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#instagram"></use>
                     </svg></a></div>
               </div>
             </div>
@@ -272,6 +271,16 @@
                   <div class="button__content" data-close="true">Отмена</div>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="demostration" data-modal="data-modal">
+        <div class="modal__overlay" data-close="true">
+          <div class="modal__window">
+            <div class="modal__header"><span class="modal__title hidden">Корзина</span><span class="modal__close" data-close="true">&times;</span></div>
+            <div class="modal__body">
+              <p class="modal__body_txt">Данная версия сайта носит демонстрационный характер</p>
             </div>
           </div>
         </div>

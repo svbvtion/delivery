@@ -1,7 +1,7 @@
 include mixins/mixin
 include mixins/modal
 doctype html
-html(lang="en")
+html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
@@ -15,7 +15,7 @@ html(lang="en")
 				header.header
 					.header__top
 						.header__logo.header__item
-							a.logo(href="#")
+							a.logo(href="./")
 								+svg('logo', 'logo__icon') 
 						.header__search.header__item
 							.search
@@ -24,11 +24,11 @@ html(lang="en")
 								input.input.search__input(type="text" placeholder="Адрес доставки")
 						.header__buttons.header__item
 							.buttons
-								a.button.button_primary(href="#")
+								a.button.button_primary.header__button.modal__link(href="#demostration")
 									.button__content
 										+svg('user', 'button__icon')
 										span Войти
-								a.button.modal__link(href="#modal")
+								a.button.modal__link.header__button(href="#modal")
 									.button__content
 										+svg('basket', 'button__icon')
 										span Корзина
@@ -48,7 +48,19 @@ html(lang="en")
 									+svg('search', 'search__icon-pic')
 								input.input.search__input(type="text" placeholder='Поиск блюд и ресторанов')
 						.cards
-							a.card(href="#")
+							a.card(href="./rest.html")
+								.card__bg
+									+webp('card__img', 'food-2', 'png', 'food')
+								.card__text
+									.card__heading
+										h3.card__title Тануки
+										span.card__tag.tag 50 мин
+									.card__info
+										.card__rating.rating.card__info_item 
+											+svg('star', 'rating__icon')
+											span.rating__text 4.5
+										.card__price.card__info_item От 900 Р
+							a.card.modal__link(href="#demostration")
 								.card__bg
 									+webp('card__img', 'food-1', 'png', 'food')
 								.card__text
@@ -62,26 +74,14 @@ html(lang="en")
 										.card__price От 900 Р
 										.card__category Пицца
 
-							a.card(href="#")
-								.card__bg
-									+webp('card__img', 'food-2', 'png', 'food')
-								.card__text
-									.card__heading
-										h3.card__title Пицца плюс
-										span.card__tag.tag 50 мин
-									.card__info
-										.card__rating.rating.card__info_item 
-											+svg('star', 'rating__icon')
-											span.rating__text 4.5
-										.card__price.card__info_item От 900 Р
-										.card__category.card__info_item Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Officia, repellendus.
+							
 
-							a.card(href="#")
+							a.card.modal__link(href="#demostration")
 								.card__bg
 									+webp('card__img', 'food-3', 'png', 'food')
 								.card__text
 									.card__heading
-										h3.card__title Пицца плюс
+										h3.card__title FoodBand
 										span.card__tag.tag 50 мин
 									.card__info
 										.card__rating.rating 
@@ -90,12 +90,12 @@ html(lang="en")
 										.card__price От 900 Р
 										.card__category Пицца
 
-							a.card(href="#")
+							a.card.modal__link(href="#demostration")
 								.card__bg
 									+webp('card__img', 'food-4', 'png', 'food')
 								.card__text
 									.card__heading
-										h3.card__title Пицца плюс
+										h3.card__title PizzaBurger
 										span.card__tag.tag 50 мин
 									.card__info
 										.card__rating.rating 
@@ -104,12 +104,12 @@ html(lang="en")
 										.card__price От 900 Р
 										.card__category Пицца
 
-							a.card(href="#")
+							a.card.modal__link(href="#demostration")
 								.card__bg
 									+webp('card__img', 'food-5', 'png', 'food')
 								.card__text
 									.card__heading
-										h3.card__title Пицца плюс Пицца плюс Пицца плюс Пицца плюс
+										h3.card__title Жадина-пицца
 										span.card__tag.tag 50 мин
 									.card__info
 										.card__rating.rating 
@@ -118,12 +118,12 @@ html(lang="en")
 										.card__price От 900 Р
 										.card__category Пицца
 
-							a.card(href="#")
+							a.card.modal__link(href="#demostration")
 								.card__bg
 									+webp('card__img', 'food-6', 'png', 'food')
 								.card__text
 									.card__heading
-										h3.card__title Пицца плюс
+										h3.card__title Точка еды
 										span.card__tag.tag 50 мин
 									.card__info
 										.card__rating.rating 
@@ -138,22 +138,32 @@ html(lang="en")
 					.wrapper
 						.footer__body
 							.footer__logo.footer__body_item
-								a.logo(href="#")
+								a.logo(href="./")
 									+svg('logo', 'logo__icon')
 							nav.footer__nav.footer__body_item
-								a.footer__link(href="#") Ресторанам 
-								a.footer__link(href="#") Курьерам
-								a.footer__link(href="#") Прессцентр
-								a.footer__link(href="#") Контакт
+								a.footer__link.modal__link(href="#demostration") Ресторанам 
+								a.footer__link.modal__link(href="#demostration") Курьерам
+								a.footer__link.modal__link(href="#demostration") Прессцентр
+								a.footer__link.modal__link(href="#demostration") Контакт
 							.footer__social.footer__body_item
 								.social
-									a.social__link(href="#")
-										+svg('insta', 'social__icon')
-									a.social__link(href="#")
-										+svg('fb', 'social__icon')
-									a.social__link(href="#")
+									a.social__link.modal__link(href="#demostration")
 										+svg('vk', 'social__icon')
+									a.social__link.modal__link(href="#demostration")
+										+svg('twitter', 'social__icon')
+									a.social__link.modal__link(href="#demostration")
+										+svg('instagram', 'social__icon')
 
 			+modal('modal')
+			.modal#demostration(data-modal="data-modal")
+				.modal__overlay(data-close='true')
+					.modal__window
+						.modal__header
+							span.modal__title.hidden Корзина
+							span.modal__close(data-close="true") &times;
+						.modal__body
+							p.modal__body_txt Данная версия сайта носит демонстрационный характер
+
+
 
 		script(src="static/js/main.js")

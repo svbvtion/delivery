@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,7 +12,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__top">
-          <div class="header__logo header__item"><a class="logo" href="#">
+          <div class="header__logo header__item"><a class="logo" href="./">
               <svg class="icon icon-logo logo__icon">
                 <use xlink:href="static/img/svg/sprite.svg#logo"></use>
               </svg></a></div>
@@ -27,12 +27,12 @@
             </div>
           </div>
           <div class="header__buttons header__item">
-            <div class="buttons"><a class="button button_primary" href="#">
+            <div class="buttons"><a class="button button_primary header__button modal__link" href="#demostration">
                 <div class="button__content">
                   <svg class="icon icon-user button__icon">
                     <use xlink:href="static/img/svg/sprite.svg#user"></use>
                   </svg><span>Войти</span>
-                </div></a><a class="button" href="#">
+                </div></a><a class="button modal__link header__button" href="#modal">
                 <div class="button__content">
                   <svg class="icon icon-basket button__icon">
                     <use xlink:href="static/img/svg/sprite.svg#basket"></use>
@@ -46,7 +46,7 @@
       <div class="wrapper">
         <section class="restaurants">
           <div class="section__heading">
-            <h2 class="section__title section__item">PizzaBurger</h2>
+            <h2 class="section__title section__item">Тануки</h2>
             <div class="section__info section__item">
               <div class="card__info">
                 <div class="card__rating rating card__info_item"> 
@@ -60,15 +60,16 @@
             </div>
           </div>
           <div class="cards">
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-1.webp" type="image/webp"/><img class="card__img" src="static/img/food-1.png" alt="food"/>
+                  <source srcset="static/img/image.webp" type="image/webp"/><img class="card__img" src="static/img/image.png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Ролл угорь стандарт</h3>
+                  <div class="card__category card__info_item card__sost">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -78,15 +79,16 @@
                     </div></a><span class="card__pricing card__buy_item">250 ₽</span></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-2.webp" type="image/webp"/><img class="card__img" src="static/img/food-2.png" alt="food"/>
+                  <source srcset="static/img/image-(1).webp" type="image/webp"/><img class="card__img" src="static/img/image-(1).png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Калифорния лосось стандарт</h3>
+                  <div class="card__category card__info_item card__sost">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -96,15 +98,16 @@
                     </div></a><span class="card__pricing card__buy_item">250 ₽</span></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-3.webp" type="image/webp"/><img class="card__img" src="static/img/food-3.png" alt="food"/>
+                  <source srcset="static/img/image-(2).webp" type="image/webp"/><img class="card__img" src="static/img/image-(2).png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Окинава стандарт</h3>
+                  <div class="card__category card__info_item card__sost"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -114,15 +117,16 @@
                     </div></a><span class="card__pricing card__buy_item">250 ₽</span></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-4.webp" type="image/webp"/><img class="card__img" src="static/img/food-4.png" alt="food"/>
+                  <source srcset="static/img/image-(3).webp" type="image/webp"/><img class="card__img" src="static/img/image-(3).png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Цезарь маки хl</h3>
+                  <div class="card__category card__info_item card__sost">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -132,15 +136,16 @@
                     </div></a><span class="card__pricing card__buy_item">250 ₽</span></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-5.webp" type="image/webp"/><img class="card__img" src="static/img/food-5.png" alt="food"/>
+                  <source srcset="static/img/image-(4).webp" type="image/webp"/><img class="card__img" src="static/img/image-(4).png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс Пицца плюс Пицца плюс Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Ясай маки стандарт 185 г</h3>
+                  <div class="card__category card__info_item card__sost">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -150,15 +155,16 @@
                     </div></a><span class="card__pricing card__buy_item">250 ₽</span></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card modal__link" href="#demostration">
               <div class="card__bg">
                 <picture>
-                  <source srcset="static/img/food-6.webp" type="image/webp"/><img class="card__img" src="static/img/food-6.png" alt="food"/>
+                  <source srcset="static/img/image-(5).webp" type="image/webp"/><img class="card__img" src="static/img/image-(5).png" alt="food"/>
                 </picture>
               </div>
               <div class="card__text">
-                <div class="card__heading">
-                  <h3 class="card__title">Пицца плюс</h3><span class="card__tag tag">50 мин</span>
+                <div class="card__heading card__tovar">
+                  <h3 class="card__title card-prod__title">Ролл с креветкой стандарт</h3>
+                  <div class="card__category card__info_item card__sost">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
                 </div>
                 <div class="card__buy"><a class="card__button button button_primary card__buy_item" href="#">
                     <div class="button__content">
@@ -174,26 +180,106 @@
       <footer class="footer">
         <div class="wrapper">
           <div class="footer__body">
-            <div class="footer__logo footer__body_item"><a class="logo" href="#">
+            <div class="footer__logo footer__body_item"><a class="logo" href="./">
                 <svg class="icon icon-logo logo__icon">
                   <use xlink:href="static/img/svg/sprite.svg#logo"></use>
                 </svg></a></div>
-            <nav class="footer__nav footer__body_item"><a class="footer__link" href="#">Ресторанам </a><a class="footer__link" href="#">Курьерам</a><a class="footer__link" href="#">Прессцентр</a><a class="footer__link" href="#">Контакт</a></nav>
+            <nav class="footer__nav footer__body_item"><a class="footer__link modal__link" href="#demostration">Ресторанам </a><a class="footer__link modal__link" href="#demostration">Курьерам</a><a class="footer__link modal__link" href="#demostration">Прессцентр</a><a class="footer__link modal__link" href="#demostration">Контакт</a></nav>
             <div class="footer__social footer__body_item">
-              <div class="social"><a class="social__link" href="#">
-                  <svg class="icon icon-insta social__icon">
-                    <use xlink:href="static/img/svg/sprite.svg#insta"></use>
-                  </svg></a><a class="social__link" href="#">
-                  <svg class="icon icon-fb social__icon">
-                    <use xlink:href="static/img/svg/sprite.svg#fb"></use>
-                  </svg></a><a class="social__link" href="#">
+              <div class="social"><a class="social__link modal__link" href="#demostration">
                   <svg class="icon icon-vk social__icon">
                     <use xlink:href="static/img/svg/sprite.svg#vk"></use>
+                  </svg></a><a class="social__link modal__link" href="#demostration">
+                  <svg class="icon icon-twitter social__icon">
+                    <use xlink:href="static/img/svg/sprite.svg#twitter"></use>
+                  </svg></a><a class="social__link modal__link" href="#demostration">
+                  <svg class="icon icon-instagram social__icon">
+                    <use xlink:href="static/img/svg/sprite.svg#instagram"></use>
                   </svg></a></div>
             </div>
           </div>
         </div>
       </footer>
+      <div class="modal" id="modal" data-modal="data-modal">
+        <div class="modal__overlay" data-close="true">
+          <div class="modal__window">
+            <div class="modal__header"><span class="modal__title">Корзина</span><span class="modal__close" data-close="true">&times</span></div>
+            <div class="modal__products">
+              <ul class="products__list">
+                <li class="products__item"><span class="products__name">Ролл угорь стандарт</span>
+                  <div class="products__group">
+                    <div class="products__price"><span class="products__price_value">250 </span><span class="products__price_valute">₽</span></div>
+                    <div class="products__count">
+                      <button class="products__count_button products__count_reduce">-</button><span class="products__count_value">1</span>
+                      <button class="products__count_button products__count_enlarge">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item"><span class="products__name">Ролл угорь стандарт</span>
+                  <div class="products__group">
+                    <div class="products__price"><span class="products__price_value">250 </span><span class="products__price_valute">₽</span></div>
+                    <div class="products__count">
+                      <button class="products__count_button products__count_reduce">-</button><span class="products__count_value">1</span>
+                      <button class="products__count_button products__count_enlarge">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item"><span class="products__name">Ролл угорь стандарт</span>
+                  <div class="products__group">
+                    <div class="products__price"><span class="products__price_value">250 </span><span class="products__price_valute">₽</span></div>
+                    <div class="products__count">
+                      <button class="products__count_button products__count_reduce">-</button><span class="products__count_value">1</span>
+                      <button class="products__count_button products__count_enlarge">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item"><span class="products__name">Ролл угорь стандарт Ролл угорь стандарт Ролл угорь стандарт</span>
+                  <div class="products__group">
+                    <div class="products__price"><span class="products__price_value">250 </span><span class="products__price_valute">₽</span></div>
+                    <div class="products__count">
+                      <button class="products__count_button products__count_reduce">-</button><span class="products__count_value">1</span>
+                      <button class="products__count_button products__count_enlarge">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item"><span class="products__name">Ролл угорь стандарт</span>
+                  <div class="products__group">
+                    <div class="products__price"><span class="products__price_value">250 </span><span class="products__price_valute">₽</span></div>
+                    <div class="products__count">
+                      <button class="products__count_button products__count_reduce">-</button><span class="products__count_value">1</span>
+                      <button class="products__count_button products__count_enlarge">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal__footer">
+              <div class="modal__result modal__footer_item">
+                <div class="result"><span class="result__value">1250 </span><span class="result__valute">₽</span></div>
+              </div>
+              <div class="modal__buttons modal__footer_item">
+                <button class="button button_primary modal__button" href="#">
+                  <div class="button__content">Оформить заказ</div>
+                </button>
+                <button class="button modal__button">
+                  <div class="button__content" data-close="true">Отмена</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="demostration" data-modal="data-modal">
+        <div class="modal__overlay" data-close="true">
+          <div class="modal__window">
+            <div class="modal__header"><span class="modal__title hidden">Корзина</span><span class="modal__close" data-close="true">&times;</span></div>
+            <div class="modal__body">
+              <p class="modal__body_txt">Данная версия сайта носит демонстрационный характер</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="static/js/main.js"></script>
   </body>
 </html>

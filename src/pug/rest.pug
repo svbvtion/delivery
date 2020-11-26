@@ -1,6 +1,8 @@
 include mixins/mixin
+include mixins/modal
+
 doctype html
-html(lang="en")
+html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
@@ -13,7 +15,7 @@ html(lang="en")
 			header.header
 				.header__top
 					.header__logo.header__item
-						a.logo(href="#")
+						a.logo(href="./")
 							+svg('logo', 'logo__icon') 
 					.header__search.header__item
 						.search
@@ -22,11 +24,11 @@ html(lang="en")
 							input.input.search__input(type="text" placeholder="Адрес доставки")
 					.header__buttons.header__item
 						.buttons
-							a.button.button_primary(href="#")
+							a.button.button_primary.header__button.modal__link(href="#demostration")
 								.button__content
 									+svg('user', 'button__icon')
 									span Войти
-							a.button(href="#")
+							a.button.modal__link.header__button(href="#modal")
 								.button__content
 									+svg('basket', 'button__icon')
 									span Корзина
@@ -36,7 +38,7 @@ html(lang="en")
 				
 				section.restaurants
 					.section__heading
-						h2.section__title.section__item PizzaBurger
+						h2.section__title.section__item Тануки
 						.section__info.section__item
 							.card__info
 								.card__rating.rating.card__info_item 
@@ -45,44 +47,31 @@ html(lang="en")
 								.card__price.card__info_item От 900 Р
 								.card__category.card__info_item Пицца
 					.cards
-						.card
+						.card.modal__link(href="#demostration")
 							.card__bg
-								+webp('card__img', 'food-1', 'png', 'food')
+								+webp('card__img', 'image', 'png', 'food')
 							.card__text
-								.card__heading
-									h3.card__title Пицца плюс
-									span.card__tag.tag 50 мин
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Ролл угорь стандарт
+									.card__category.card__info_item.card__sost Рис, угорь, соус унаги, кунжут, водоросли нори.
 								.card__buy
+
 									a.card__button.button.button_primary.card__buy_item(href='#')
+
 										.button__content
 											+svg('basket', 'button__icon')
 											span В корзину
+
 									span.card__pricing.card__buy_item 250 ₽
 								
 
-						.card
+						.card.modal__link(href="#demostration")
 							.card__bg
-								+webp('card__img', 'food-2', 'png', 'food')
+								+webp('card__img', 'image-(1)', 'png', 'food')
 							.card__text
-								.card__heading
-									h3.card__title Пицца плюс
-									span.card__tag.tag 50 мин
-								.card__buy
-									a.card__button.button.button_primary.card__buy_item(href='#')
-										.button__content
-											+svg('basket', 'button__icon')
-											span В корзину
-									span.card__pricing.card__buy_item 250 ₽
-
-								
-
-						.card
-							.card__bg
-								+webp('card__img', 'food-3', 'png', 'food')
-							.card__text
-								.card__heading
-									h3.card__title Пицца плюс
-									span.card__tag.tag 50 мин
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Калифорния лосось стандарт
+									.card__category.card__info_item.card__sost Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.
 								.card__buy
 									a.card__button.button.button_primary.card__buy_item(href='#')
 										.button__content
@@ -92,13 +81,13 @@ html(lang="en")
 
 								
 
-						.card
+						.card.modal__link(href="#demostration")
 							.card__bg
-								+webp('card__img', 'food-4', 'png', 'food')
+								+webp('card__img', 'image-(2)', 'png', 'food')
 							.card__text
-								.card__heading
-									h3.card__title Пицца плюс
-									span.card__tag.tag 50 мин
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Окинава стандарт
+									.card__category.card__info_item.card__sost  Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...
 								.card__buy
 									a.card__button.button.button_primary.card__buy_item(href='#')
 										.button__content
@@ -108,13 +97,13 @@ html(lang="en")
 
 								
 
-						.card
+						.card.modal__link(href="#demostration")
 							.card__bg
-								+webp('card__img', 'food-5', 'png', 'food')
+								+webp('card__img', 'image-(3)', 'png', 'food')
 							.card__text
-								.card__heading
-									h3.card__title Пицца плюс Пицца плюс Пицца плюс Пицца плюс
-									span.card__tag.tag 50 мин
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Цезарь маки хl
+									.card__category.card__info_item.card__sost Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...
 								.card__buy
 									a.card__button.button.button_primary.card__buy_item(href='#')
 										.button__content
@@ -124,13 +113,29 @@ html(lang="en")
 
 								
 
-						.card
+						.card.modal__link(href="#demostration")
 							.card__bg
-								+webp('card__img', 'food-6', 'png', 'food')
+								+webp('card__img', 'image-(4)', 'png', 'food')
 							.card__text
-								.card__heading
-									h3.card__title Пицца плюс
-									span.card__tag.tag 50 мин
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Ясай маки стандарт 185 г
+									.card__category.card__info_item.card__sost Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг
+								.card__buy
+									a.card__button.button.button_primary.card__buy_item(href='#')
+										.button__content
+											+svg('basket', 'button__icon')
+											span В корзину
+									span.card__pricing.card__buy_item 250 ₽
+
+								
+
+						.card.modal__link(href="#demostration")
+							.card__bg
+								+webp('card__img', 'image-(5)', 'png', 'food')
+							.card__text
+								.card__heading.card__tovar
+									h3.card__title.card-prod__title Ролл с креветкой стандарт
+									.card__category.card__info_item.card__sost Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы
 								.card__buy
 									a.card__button.button.button_primary.card__buy_item(href='#')
 										.button__content
@@ -146,21 +151,31 @@ html(lang="en")
 				.wrapper
 					.footer__body
 						.footer__logo.footer__body_item
-							a.logo(href="#")
+							a.logo(href="./")
 								+svg('logo', 'logo__icon')
 						nav.footer__nav.footer__body_item
-							a.footer__link(href="#") Ресторанам 
-							a.footer__link(href="#") Курьерам
-							a.footer__link(href="#") Прессцентр
-							a.footer__link(href="#") Контакт
+							a.footer__link.modal__link(href="#demostration") Ресторанам 
+							a.footer__link.modal__link(href="#demostration") Курьерам
+							a.footer__link.modal__link(href="#demostration") Прессцентр
+							a.footer__link.modal__link(href="#demostration") Контакт
 						.footer__social.footer__body_item
 							.social
-								a.social__link(href="#")
-									+svg('insta', 'social__icon')
-								a.social__link(href="#")
-									+svg('fb', 'social__icon')
-								a.social__link(href="#")
+								a.social__link.modal__link(href="#demostration")
 									+svg('vk', 'social__icon')
+								a.social__link.modal__link(href="#demostration")
+									+svg('twitter', 'social__icon')
+								a.social__link.modal__link(href="#demostration")
+									+svg('instagram', 'social__icon')
+			+modal('modal')
+			.modal#demostration(data-modal="data-modal")
+				.modal__overlay(data-close='true')
+					.modal__window
+						.modal__header
+							span.modal__title.hidden Корзина
+							span.modal__close(data-close="true") &times;
+						.modal__body
+							p.modal__body_txt Данная версия сайта носит демонстрационный характер
+		script(src="static/js/main.js")
 
 			
 
